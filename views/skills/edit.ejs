@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skills</title>
+</head>
+<body>
+    <h1>Edit Skill</h1>
+    <form action="/skills/<%= idx %>?_method=PUT" method="POST" autocomplete="off">
+      <input type="checkbox" name="done" <%= skill.done ? 'checked' : '' %> >&nbsp;&nbsp;
+      <input type="text" name="skill" value="<%= skill.skill %>">
+      <button type="submit">Update Skill</button>
+    </form>
+  </body>
+  </html>

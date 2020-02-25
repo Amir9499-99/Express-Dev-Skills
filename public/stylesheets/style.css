@@ -1,0 +1,49 @@
+*{
+  font-family: 'Yeon Sung', ;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  justify-items: center;
+  margin-top: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  background-image: url(https://elevateservices.com/wp-content/uploads/webinar01172019.jpeg);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00B7FF;
+  
+}
+
+li{
+  list-style: none;
+  
+}
+
+body{
+  background-color: gray;
+  color: white;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: white;
+}
+
+button:hover{
+  box-shadow: lightgrey;
+}
+button{
+  margin: 10px;
+}

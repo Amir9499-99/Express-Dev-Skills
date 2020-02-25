@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Skills</title>
+</head>
+<body>
+  <a href="/">Return To Home</a><br><br>
+    <h1>Skills</h1>
+   <tr> <ul>
+      <% skills.forEach(function(t, idx) { %>
+        <li>
+          <form action="/skills/<%= idx %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit" class="btn btn-danger">X</button>
+          </form>
+          <a href="/skills/<%= idx %>"><%= t.skill %></a>
+            -   
+          <%= t.skill ? 'Done' : 'not done ' %> 
+        </li> 
+      <% }); %>
+    </ul>   
+  </tr>
+    <a href="skills/new"> Add new Skill</a>
+    <br>
+    <a href="/">Return To Home</a>
+</body>
+</html>
